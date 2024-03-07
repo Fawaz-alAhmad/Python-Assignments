@@ -6,7 +6,7 @@ def printIsocel(n):
             stars += '*'
             print(stars)
         else:
-            stars = stars[0:len(stars)-1]
+            stars = stars[:len(stars)-1]
             print(stars)
 
 printIsocel(6)
