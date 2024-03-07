@@ -57,6 +57,7 @@ def main():
 
 
 def countDigits(num):
+    if(num<0): return countDigits(-num)
     if (num < 10):
         return 1
     return 1 + countDigits(num//10)
