@@ -82,12 +82,12 @@ def validateIPv4(s):
             return 'IP invalid: negative number'
         elif (octet > 255):
             return 'IP invalid: octet value too big'
-        elif (octet_str[0] == '0' and len(octet_str) > 1):
+        elif (octet_str[0] == 0 and len(octet_str) > 1):
             return 'IP invalid: leading zero in octet'
 
     return 'IP Valid'
 
-s = input('Enter the IP address you wish to validate: ')
+ip = input('Enter the IP address you wish to validate: ')
 
-print(validateIPv4(s))
+print(validateIPv4(ip))
 #----------------------------------------------------------------------------------------------
